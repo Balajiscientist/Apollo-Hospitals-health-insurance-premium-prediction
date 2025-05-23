@@ -4,7 +4,7 @@ import streamlit as st
 from prediction_helper import predict
 
 # Define the page layout
-st.title('Apollo Health Insurance Cost Predictor')
+st.title('Apollo Health Insurance Cost premium Predictor')
 
 categorical_options = {
     'Gender': ['Male', 'Female'],
