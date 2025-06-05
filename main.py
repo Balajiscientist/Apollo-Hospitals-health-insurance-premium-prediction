@@ -1,11 +1,11 @@
-# codebasics ML course: codebasics.io, all rights reserverd
-
 import streamlit as st
 from prediction_helper import predict
+import base64
 
-# Define the page layout
-st.title('Apollo Health Insurance Cost premium Predictor')
+# Set the page title
+st.title('Apollo Health Insurance Premium Predictor')
 
+# Define categorical options
 categorical_options = {
     'Gender': ['Male', 'Female'],
     'Marital Status': ['Unmarried', 'Married'],
@@ -27,7 +27,7 @@ row2 = st.columns(3)
 row3 = st.columns(3)
 row4 = st.columns(3)
 
-# Assign inputs to the grid
+# Assign inputs to the grid (without Genetical Risk)
 with row1[0]:
     age = st.number_input('Age', min_value=18, step=1, max_value=100)
 with row1[1]:
@@ -36,10 +36,8 @@ with row1[2]:
     income_lakhs = st.number_input('Income in Lakhs', step=1, min_value=0, max_value=200)
 
 with row2[0]:
-    genetical_risk = st.number_input('Genetical Risk', step=1, min_value=0, max_value=5)
-with row2[1]:
     insurance_plan = st.selectbox('Insurance Plan', categorical_options['Insurance Plan'])
-with row2[2]:
+with row2[1]:
     employment_status = st.selectbox('Employment Status', categorical_options['Employment Status'])
 
 with row3[0]:
@@ -56,12 +54,11 @@ with row4[1]:
 with row4[2]:
     medical_history = st.selectbox('Medical History', categorical_options['Medical History'])
 
-# Create a dictionary for input values
+# Create a dictionary for input values (excluding Genetical Risk)
 input_dict = {
     'Age': age,
     'Number of Dependants': number_of_dependants,
     'Income in Lakhs': income_lakhs,
-    'Genetical Risk': genetical_risk,
     'Insurance Plan': insurance_plan,
     'Employment Status': employment_status,
     'Gender': gender,
@@ -72,13 +69,12 @@ input_dict = {
     'Medical History': medical_history
 }
 
-# Button to make prediction
+# Prediction button
 if st.button('Predict'):
     prediction = predict(input_dict)
     st.success(f'Predicted Health Insurance Cost: {prediction}')
 
-import base64
-
+# Background image functions
 def get_base64(file_path):
     with open(file_path, "rb") as f:
         return base64.b64encode(f.read()).decode()
@@ -99,5 +95,5 @@ def set_background(image_path):
         unsafe_allow_html=True
     )
 
-# Use your actual image file path
+# Set background image
 set_background("image.png")
