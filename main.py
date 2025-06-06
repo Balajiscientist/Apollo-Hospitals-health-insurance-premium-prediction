@@ -27,7 +27,7 @@ row2 = st.columns(3)
 row3 = st.columns(3)
 row4 = st.columns(3)
 
-# Assign inputs to the grid (without Genetical Risk)
+
 with row1[0]:
     age = st.number_input('Age', min_value=18, step=1, max_value=100)
 with row1[1]:
@@ -40,18 +40,18 @@ with row2[0]:
 with row2[1]:
     employment_status = st.selectbox('Employment Status', categorical_options['Employment Status'])
 
-with row3[0]:
+with row2[2]:
     gender = st.selectbox('Gender', categorical_options['Gender'])
-with row3[1]:
+with row3[0]:
     marital_status = st.selectbox('Marital Status', categorical_options['Marital Status'])
-with row3[2]:
+with row3[1]:
     bmi_category = st.selectbox('BMI Category', categorical_options['BMI Category'])
 
-with row4[0]:
+with row3[2]:
     smoking_status = st.selectbox('Smoking Status', categorical_options['Smoking Status'])
-with row4[1]:
+with row4[0]:
     region = st.selectbox('Region', categorical_options['Region'])
-with row4[2]:
+with row4[1]:
     medical_history = st.selectbox('Medical History', categorical_options['Medical History'])
 
 # Create a dictionary for input values (excluding Genetical Risk)
@@ -66,6 +66,7 @@ input_dict = {
     'BMI Category': bmi_category,
     'Smoking Status': smoking_status,
     'Region': region,
+
     'Medical History': medical_history
 }
 
