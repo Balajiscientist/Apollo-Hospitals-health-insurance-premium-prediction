@@ -98,3 +98,4 @@ def set_background(image_path):
 
 # Set background image
 set_background("image.png")
+
