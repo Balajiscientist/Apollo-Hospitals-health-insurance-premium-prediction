@@ -3,7 +3,7 @@ from prediction_helper import predict
 import base64
 
 # Set the page title
-st.title('Apollo Health Insurance Premium Predictor')
+st.title('Cdhpm Apollo Health Insurance Premium Predictor ')
 
 # Define categorical options
 categorical_options = {
