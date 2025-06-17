@@ -24,15 +24,6 @@ This project is an Apollo Health Insurance Premium Prediction system that provid
 ![Apollo App Screenshot](https://github.com/Balajiscientist/Apollo-Hospitals-health-insurance-premium-prediction/blob/8149b2d7dea402e5ff4a7c0c16a0b444b272e836/conclusion)
 
 # Delivered
-- Collected and cleaned a dataset of 50,000 records with 14 features from a third-party vendor.
-- Performed exploratory data analysis (EDA) and feature engineering.
-- Trained, tuned, and selected the best-performing(Xg Boost) machine learning model.
-- Built and packaged the model using joblib for deployment.
-- Developed an interactive Streamlit application for premium prediction.
-- Documented the project, including setup instructions and usage guide.
-
-# Objectives I Accomplished in this Project
-
 - Collected a labeled dataset of 50,000 records with 14 features from a third-party vendor.
 - Performed data cleaning, handled missing values, and removed outliers to improve data quality.
 - Conducted exploratory data analysis (EDA) to identify key patterns and correlations.
