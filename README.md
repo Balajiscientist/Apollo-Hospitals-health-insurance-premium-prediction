@@ -2,6 +2,13 @@
 
 This project is an Apollo Health Insurance Premium Prediction system that provides a user-friendly. Streamlit frontend and uses machine learning models to estimate health insurance premiums based on user input and medical history. This project was developed at the Centre for Digital Health and Precision Medicine (CDHPM) during an internship.
 
+# Objectives of this project
+- Developed a high-accuracy predictive model achieving >97% accuracy.
+- Ensured that the percentage difference between the predicted and actual value was less than 10% 
+-for at least 95% of the predictions.
+- Deployed the model on the cloud so insurance underwriters can access it from anywhere.
+- Created an interactive Streamlit app that allows underwriters to input details and receive predictions easily.
+
 
 ## Project Structure
 
@@ -11,6 +18,22 @@ This project is an Apollo Health Insurance Premium Prediction system that provid
 - **requirements.txt/**: Lists the required Python packages.
 - **image.png/**: Background image used in the Streamlit app.
 - **README.md/**: Provides an overview and setup instructions for the project.
+
+# App Result
+
+![Apollo App Screenshot](https://github.com/Balajiscientist/Apollo-Hospitals-health-insurance-premium-prediction/blob/8149b2d7dea402e5ff4a7c0c16a0b444b272e836/conclusion)
+
+# Delivered
+- Collected and cleaned a dataset of 50,000 records with 14 features from a third-party vendor.
+- Performed exploratory data analysis (EDA) and feature engineering.
+- Trained, tuned, and selected the best-performing(Xg Boost) machine learning model.
+- Built and packaged the model using joblib for deployment.
+- Developed an interactive Streamlit application for premium prediction.
+- Documented the project, including setup instructions and usage guide.
+
+# Conclusion
+This project provides an easy-to-use tool for predicting health insurance premiums based on user details and medical history. It aims to assist users in estimating costs and supports personalized insurance planning.
+
 ## Setup Instructions
 
 1. **Clone the repository**:
@@ -27,3 +50,5 @@ This project is an Apollo Health Insurance Premium Prediction system that provid
    ```commandline
     streamlit run main.py
    ```
+
+   
