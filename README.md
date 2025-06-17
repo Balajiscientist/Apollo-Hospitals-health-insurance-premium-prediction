@@ -11,3 +11,19 @@ This project is an Apollo Health Insurance Premium Prediction system that provid
 - **requirements.txt/**: Lists the required Python packages.
 - **image.png/**: Background image used in the Streamlit app.
 - **README.md/**: Provides an overview and setup instructions for the project.
+## Setup Instructions
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/Balajiscientist/Apollo-Hospitals-health-insurance-premium-prediction.git
+   cd Apollo-Hospitals-health-insurance-premium-prediction
+   ```
+1. **Install dependencies:**:   
+   ```commandline
+    pip install -r requirements.txt
+   ```
+
+1. **Run the Streamlit app:**:   
+   ```commandline
+    streamlit run main.py
+   ```
