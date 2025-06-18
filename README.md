@@ -44,8 +44,8 @@ This project provides an easy-to-use tool for predicting health insurance premiu
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/Balajiscientist/Apollo-Hospitals-health-insurance-premium-prediction.git
-   cd Apollo-Hospitals-health-insurance-premium-prediction
+   git clone https://github.com/Balajiscientist/Apollo_Hospitals_health_insurance_premium_prediction.git
+   cd Apollo_Hospitals_health_insurance_premium_prediction
    ```
 1. **Install dependencies**:   
    ```commandline
