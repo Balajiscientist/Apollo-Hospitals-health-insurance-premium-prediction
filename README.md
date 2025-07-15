@@ -40,21 +40,6 @@ This project is an Apollo Health Insurance Premium Prediction system that provid
 # Conclusion
 This project provides an easy-to-use tool for predicting health insurance premiums based on user details and medical history. It aims to assist users in estimating costs and supports personalized insurance planning.
 
-## Setup Instructions
-
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/Balajiscientist/Apollo_Hospitals_health_insurance_premium_prediction.git
-   cd Apollo_Hospitals_health_insurance_premium_prediction
-   ```
-1. **Install dependencies**:   
-   ```commandline
-    pip install -r requirements.txt
-   ```
-
-1. **Run the Streamlit app**:   
-   ```commandline
-    streamlit run main.py
    ```
 
    
